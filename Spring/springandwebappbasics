@@ -1,0 +1,142 @@
+Standlone 
+
+WebApplication
+==============
+server--->tomcat,jboss/wildfy,weblogic,
+container--->servlet container --->jar file(catalina)
+
+webapplication ----> Demo.war--> javacode --->.class 
+
+com.evoke.controller --->Demo.java --->Bulid ---> com/evoke/controller/DemoController.class
+
+
+DemoService--->DemoDao--->new DemoDao();//memmory issue//null gc ---->null object
+
+.xml
+//configuration //
+//db ORM
+connection 
+//customobject depencedy
+//fileuplod -->10mb--> 10000mb
+//
+
+
+ORM--->Object Releation Mapping
+Hibernate
+
+ibatis
+
+
+
+@table()
+Account
+
+@primarykey
+@column("id")
+private int id
+
+@colimn("first_name")
+private String name
+
+@column("mail")
+private String email
+
+//jdbc connection--->Layer--->direct  query --> Accoount -->findById(Account)--->
+save(Accoount)//insert-->new record
+
+saveOrUpdate(Account)//insert-->new record or update --old record
+
+update()//update
+
+get(Account)//select 
+
+connection = which data connection
+//connection jdbc -->sessionfactory--->hibernateTemplate-->
+
+
+
+
+
+
+SPRING MVC
+----------
+DependencyInjection(Dependecy object created by spring container)
+--------------------
+
+setterInjection
+Construct Injection
+
+
+Spring CORE
+-----------
+Spring ORM
+----------
+
+
+
+SPRING MVC --->web application---web pages --->jsp
+controller
+
+spring boot
+----------
+Micro service
+
+UI --->Angular
+
+webserice
+---------
+url --->post/get
+
+
+function (){
+url cart
+request body json
+{
+}
+response body{ json
+}
+}
+
+
+
+Micro serivce (spring boot,node.js,react js)
+cart ---> web service --> json spring boot app --json -- tomcat
+menu ---> spring boot app --> jboss 
+deal of the day --> spring boot app
+
+
+=========================
+
+Webapplication
+
+Method type
+
+POST--->SAVE ---https://www.flipkart.com/
+request body
+{
+"user":"abc",
+"id":123
+}
+
+{}
+
+response body
+{
+}
+secured data 
+
+
+GET--->https://www.flipkart.com/?usrse=abc&bdd=3445
+response body
+{
+}
+
+PUT//same PUT
+response body
+{
+}
+DELETE
+response body
+{
+}
+
